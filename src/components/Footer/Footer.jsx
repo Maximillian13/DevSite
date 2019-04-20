@@ -7,7 +7,7 @@ import classNames from "classnames";
 import { List, ListItem, withStyles } from "@material-ui/core";
 
 // @material-ui/icons
-import Favorite from "@material-ui/icons/Favorite";
+// import Favorite from "@material-ui/icons/Favorite";
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
 
@@ -24,7 +24,7 @@ function Footer({ ...props }) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
+        {/* <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
@@ -63,27 +63,26 @@ function Footer({ ...props }) {
               </a>
             </ListItem>
           </List>
-        </div>
+        </div> */}
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          &copy; {1900 + new Date().getYear()}, Created by Kevin Thomas. Material-UI Kit made by{" "}
           <a
             href="https://www.creative-tim.com"
             className={aClasses}
             target="_blank"
           >
             Creative Tim
-          </a>{" "}
-          for a better web.
+          </a>
+          .
         </div>
       </div>
     </footer>
   );
 }
 
-Footer.propTypes = {
-  classes: PropTypes.object.isRequired,
-  whiteFont: PropTypes.bool
-};
+// Footer.propTypes = {
+//   classes: PropTypes.object.isRequired,
+//   whiteFont: PropTypes.bool
+// };
 
 export default withStyles(footerStyle)(Footer);
