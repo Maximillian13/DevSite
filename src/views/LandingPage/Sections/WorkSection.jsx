@@ -13,6 +13,19 @@ import Button from "components/CustomButtons/Button.jsx";
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 
 class WorkSection extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {messageBody: "", messageSubject: ""};
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(event) {
+    const name = event.target.name;
+    const value = event.target.value;
+    this.setState({
+      [name]: value
+    });
+  }
   render() {
     const { classes } = this.props;
     return (
@@ -27,19 +40,15 @@ class WorkSection extends React.Component {
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
                   <CustomInput
-                    labelText="Your Name"
-                    id="name"
+                    labelText="Subject"
+                    id="subject"
                     formControlProps={{
                       fullWidth: true
                     }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={6}>
-                  <CustomInput
-                    labelText="Your Email"
-                    id="email"
-                    formControlProps={{
-                      fullWidth: true
+                    inputProps={{
+                      name: "messageSubject",
+                      value: this.state.messageSubject,
+                      onChange: this.handleChange
                     }}
                   />
                 </GridItem>
@@ -52,7 +61,10 @@ class WorkSection extends React.Component {
                   }}
                   inputProps={{
                     multiline: true,
-                    rows: 5
+                    rows: 5,
+                    name: "messageBody",
+                    value: this.state.messageBody,
+                    onChange: this.handleChange
                   }}
                 />
                 <GridContainer justify="center">
@@ -62,7 +74,8 @@ class WorkSection extends React.Component {
                     md={4}
                     className={classes.textCenter}
                   >
-                    <Button color="primary" disabled>Temporarily Unavailable</Button>
+                    <Button color="primary" href={"mailto:kevin.t0517@gmail.com?body=" + this.state.messageBody +
+                                                  "&subject=" + this.state.messageSubject}>Send Email</Button>
                   </GridItem>
                 </GridContainer>
               </GridContainer>

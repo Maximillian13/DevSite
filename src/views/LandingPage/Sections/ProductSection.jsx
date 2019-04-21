@@ -42,7 +42,7 @@ class ProductSection extends React.Component {
               <InfoArea
                 title="Bean Boy Games"
                 description="Bean Boy Games is an indie video game company I founded with two of my best friends when I was 17 years old. Since then, we've released
-                three video games to Steam. to check these games out, head on over to beanboygames.com."
+                three video games to Steam. To check these games out, head on over to beanboygames.com."
                 icon={Business}
                 iconColor="success"
                 vertical
