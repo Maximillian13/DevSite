@@ -34,7 +34,10 @@ class WorkSection extends React.Component {
           <GridItem cs={12} sm={12} md={8}>
             <h2 className={classes.title}>Contact Me</h2>
             <h4 className={classes.description}>
-              Questions or comments about one of my projects? Just want to say hello? Message me, I will respond as quickly as possible.
+              Questions or comments about one of my projects? Interested in collaborating? Just want to say hello? Message me, I will respond as quickly as possible.
+              <br />
+              <br />
+              You can also email me directly at: info@kevinthomas.dev
             </h4>
             <form>
               <GridContainer>
@@ -74,7 +77,7 @@ class WorkSection extends React.Component {
                     md={4}
                     className={classes.textCenter}
                   >
-                    <Button color="primary" href={"mailto:kevin.t0517@gmail.com?body=" + this.state.messageBody +
+                    <Button color="primary" href={"mailto:info@kevinthomas.dev?body=" + this.state.messageBody +
                                                   "&subject=" + this.state.messageSubject}>Send Email</Button>
                   </GridItem>
                 </GridContainer>
