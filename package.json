@@ -1,7 +1,7 @@
 {
-  "name": "kevinthomas-dev",
+  "name": "maximilliancoburn-dev",
   "version": "1.4.0",
-  "description": "Developer Website for Kevin Thomas",
+  "description": "Developer Website for Maximillian Coburn",
   "private": true,
   "main": "dist/index.js",
   "dependencies": {

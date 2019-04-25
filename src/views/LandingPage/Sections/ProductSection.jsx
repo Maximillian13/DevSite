@@ -30,61 +30,53 @@ class ProductSection extends React.Component {
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Lightworks"
-                description="Lightworks is a music puzzle game I'm currently developing. In Lightworks, you use critical listening skills to complete songs by matching 
-                up sections of the track - piece by piece. I'm developing Lightworks in Unity and it will be released on Steam in 2019."
+                title="Turner"
+								description="Turner is a 2D platformer puzzle game set in an insane asylum where you take the role of Turner, a man with a troubled past and an 
+								unstable state of mind.  This was the first game I published to Steam."
                 icon={VideogameAsset}
                 iconColor="info"
                 vertical
               />
               <a
-                href="javascript:alert('Soon...');"
+                href="https://store.steampowered.com/app/499340/Turner/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Trailer Coming Soon™
+                Turner Steam Page
               </a>
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Bean Boy Games"
-                description="Bean Boy Games is an indie video game company I founded with two of my best friends when I was 17 years old. Since then, we've released
-                three video games to Steam - a 2D puzzle platformer and two virtual reality games. We're always working on new games together."
-                icon={Business}
+                title="Hot Squat 1 and 2"
+								description="Hot Squat 1 and 2 are Virtual Reality fitness games. They both work around the machanic of squating under walls in order to get the highest score 
+								possible. Hot Squat 2 is still in development while Hot Squat 1 is out now!"
+                icon={VideogameAsset}
                 iconColor="success"
                 vertical
               />
               <a
-                href="http://www.beanboygames.com"
+                href="https://store.steampowered.com/app/553590/Hot_Squat/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Check Out These Games Here
+                Hot Squat Steam Page 
               </a>
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Sheep Hair"
-                description="Sheep Hair is the name I make music as. As Sheep Hair, I have created three video game soundtracks, one personal album, and plenty of
-                miscellaneous tracks. I'm always working on music projects and attempting to improve my musical skills."
-                icon={MusicNote}
+                title="UNTITLED"
+								description="UNTITLED is a physics based Virtual Reality game centered around discover and finding out things on your own. I would say more but that would defeat the 
+								purpose of the game."
+                icon={VideogameAsset}
                 iconColor="danger"
                 vertical
               />
               <a
-                href="https://www.sheephair.bandcamp.com"
+                href="https://store.steampowered.com/app/639770/UNTITLED/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                My Bandcamp
-              </a>
-              and
-              <a
-                href="https://soundcloud.com/sheephairkevin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                My SoundCloud
+                UNTITLED Steam Page 
               </a>
             </GridItem>
           </GridContainer>

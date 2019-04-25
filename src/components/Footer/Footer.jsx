@@ -65,12 +65,15 @@ function Footer({ ...props }) {
           </List>
         </div> */}
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()}, Created by Kevin Thomas. Material-UI Kit made by{" "}
+				<style>{'body { color: white; }'}</style>
+          &copy; {1900 + new Date().getYear()}, Created by Maximillian Coburn. Material-UI Kit made by{" "}
           <a
             href="https://www.creative-tim.com"
             className={aClasses}
-            target="_blank"
+						target="_blank"
           >
+				
+
             Creative Tim
           </a>
           .

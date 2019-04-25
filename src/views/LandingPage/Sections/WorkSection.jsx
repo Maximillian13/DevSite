@@ -32,12 +32,11 @@ class WorkSection extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem cs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Contact Me</h2>
+            <h1 className={classes.title}>Contact Me</h1>
             <h4 className={classes.description}>
-              Questions or comments about one of my projects? Interested in collaborating? Just want to say hello? Message me, I will respond as quickly as possible.
+              Questions? Contact me!
               <br />
-              <br />
-              You can also email me directly at: info@kevinthomas.dev
+              You can also email me directly at: <a href = "mailto:maximilliancoburn@gmail.com">MaximillianCoburn@gmail.com</a>
             </h4>
             <form>
               <GridContainer>
@@ -77,7 +76,7 @@ class WorkSection extends React.Component {
                     md={4}
                     className={classes.textCenter}
                   >
-                    <Button color="primary" href={"mailto:info@kevinthomas.dev?body=" + this.state.messageBody +
+                    <Button color="danger" href={"mailto:maximilliancoburn@gmail.com?body=" + this.state.messageBody +
                                                   "&subject=" + this.state.messageSubject}>Send Email</Button>
                   </GridItem>
                 </GridContainer>

@@ -11,7 +11,7 @@ import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-// import Button from "components/CustomButtons/Button.jsx";
+import Button from "components/CustomButtons/Button.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 
@@ -29,6 +29,7 @@ class LandingPage extends React.Component {
     const { classes, ...rest } = this.props;
     return (
       <div>
+				<style>{'body { background-color: black; }'}</style>
         <Header
           color="transparent"
           routes={dashboardRoutes}
@@ -41,25 +42,25 @@ class LandingPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+				<Parallax filter image={require("assets/img/MBG.jpg")} >
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Kevin Thomas</h1>
+                <h1 className={classes.title}>Maximillian Coburn</h1>
                 <h4>
-                  I'm Kevin Thomas, a software engineer from Seattle, Washington. I develop video games, produce music, and create things.
+                  Hey, I'm Maximillian and make video games, I currently have 3 games published and I'm currently working on game 4 and 5 🤠
                 </h4>
                 <br />
-                {/* <Button
+                <Button
                   color="danger"
                   size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  href="https://github.com/Maximillian13"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fas fa-play" />
-                  Watch video
-                </Button> */}
+                  {/* <i className="fas fa-play" /> */}
+                  My GitHub
+                </Button>
               </GridItem>
             </GridContainer>
           </div>
@@ -67,7 +68,7 @@ class LandingPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <ProductSection />
-            <TeamSection />
+            {/* <TeamSection /> */}
             <WorkSection />
           </div>
         </div>

@@ -29,7 +29,7 @@ const footerStyle = {
     position: "relative"
   },
   a: {
-    color: primaryColor,
+    color: "#00FFFF",
     textDecoration: "none",
     backgroundColor: "transparent"
   },
